@@ -15,8 +15,7 @@ import java.text.ParseException;
  */
 public class MenuPrincipal {
     public static void main(String[] args) throws ParseException {
-        CentrosControlador centros = new CentrosControlador();
-        centros.listarReporteInvestigacionActiva();
+        menuUsuario();
     }
     public static void menuUsuario(){
         UsuarioControlador metodosU = new UsuarioControlador();
