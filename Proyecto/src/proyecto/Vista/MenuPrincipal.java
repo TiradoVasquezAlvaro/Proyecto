@@ -20,6 +20,8 @@ public class MenuPrincipal {
     public static void menuUsuario() throws ParseException{
         UsuarioControlador metodosU = new UsuarioControlador();
         String menu = """
+                      |------MENU PRINCIPAL------|
+                      
                       1. Agregar Usuario
                       2. Listar Usuarios
                       3. Acceder al sistema
@@ -88,6 +90,7 @@ public class MenuPrincipal {
     public static void menuReportes() throws ParseException{
         CentrosControlador metodosC = new CentrosControlador();
         String menu = """
+                      |--------------------------MENU DE REPORTES---------------------------|
                       1. Reporte de centros de investigación agrupados por área científica. 
                       2. Reporte de centros que tienen investigación científica activa.
                       3. Reporte de información de contacto de los centros de investigación.
@@ -102,6 +105,7 @@ public class MenuPrincipal {
             indice = lector.nextInt();
             while (indice==1||indice==2||indice==3||indice==4) {                
                 String menuInterno = """
+                                     |--------MENU INTERNO-------|
                                      1. Imprimir por pantalla
                                      2. Exportar a archivo plano
                                      3. Volver al menu
@@ -122,13 +126,13 @@ public class MenuPrincipal {
                         String ruta="";
                         switch(indice){
                             case 1 ->
-                                ruta = "D:\\AreaCientifica.txt";
+                                ruta = "C:\\AreaCientifica.txt";
                             case 2 ->
-                                ruta = "D:\\InvestigacionActiva.txt";
+                                ruta = "C:\\InvestigacionActiva.txt";
                             case 3 ->
-                                ruta = "D:\\InformacionContacto.txt";
+                                ruta = "C:\\InformacionContacto.txt";
                             case 4 ->
-                                ruta = "D:\\InnovacionTecnologica.txt";
+                                ruta = "C:\\InnovacionTecnologica.txt";
                         }
                         metodosC.exportarLista(ruta, indice);
                         System.out.println("Exportado completado");

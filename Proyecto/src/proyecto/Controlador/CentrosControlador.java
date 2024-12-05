@@ -21,7 +21,7 @@ import java.time.LocalDateTime;
 public class CentrosControlador {
     public void listarReporteAreaCientifica(){
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("D:\\BD Centros de investigacion.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("C:\\BD Centros de investigacion.txt"));
             StringBuilder s = new StringBuilder();
             String linea = "";
             s.append(String.format("Reporte de areas cientificas\n"));
@@ -41,7 +41,7 @@ public class CentrosControlador {
     }
     public void listarReporteInvestigacionActiva() throws ParseException {
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("D:\\BD Centros de investigacion.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("C:\\BD Centros de investigacion.txt"));
             StringBuilder s = new StringBuilder();
             String linea = "";
             s.append(String.format("Reporte de Investigaciones activas\n"));
@@ -66,7 +66,7 @@ public class CentrosControlador {
     }
     public void listarReporteInformacionContacto(){
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("D:\\BD Centros de investigacion.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("C:\\BD Centros de investigacion.txt"));
             StringBuilder s = new StringBuilder();
             String linea = "";
             s.append(String.format("Reporte de Informacion de Contacto\n"));
@@ -89,7 +89,7 @@ public class CentrosControlador {
     }
     public void listarReporteInnovacion() throws ParseException {
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("D:\\BD Centros de investigacion.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("C:\\BD Centros de investigacion.txt"));
             StringBuilder s = new StringBuilder();
             String linea = "";
             s.append(String.format("Reporte de Innovaciones tecnologicas\n"));
@@ -113,7 +113,7 @@ public class CentrosControlador {
         try {
             BufferedWriter escritor = new BufferedWriter(new FileWriter(ruta,true));
             try {
-                BufferedReader lector = new BufferedReader(new FileReader("D:\\BD Centros de investigacion.txt"));
+                BufferedReader lector = new BufferedReader(new FileReader("C:\\BD Centros de investigacion.txt"));
                 String linea="";
                 while ((linea = lector.readLine())!=null) {                
                     String[] bloques = linea.split(";");
