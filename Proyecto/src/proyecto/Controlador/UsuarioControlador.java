@@ -109,6 +109,7 @@ public class UsuarioControlador {
                         boolean validadorUsuario = lista.getUser().equals(user.getUser()) && lista.getPassword().equals(user.getPassword());
                         if (validadorUsuario) {
                             System.out.println("Acceso correcto");
+                            System.out.println("");
                             validadorAcceso = true;
                             break;
                         }
@@ -125,6 +126,7 @@ public class UsuarioControlador {
                         System.out.print("Intenta de nuevo. Presiona Enter");
                     }else{
                         System.out.println("Usuario bloqueado");
+                        System.out.println("");
                     }
                 }
                 lector.close();
