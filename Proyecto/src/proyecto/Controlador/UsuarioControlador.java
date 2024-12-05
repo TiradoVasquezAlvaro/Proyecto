@@ -100,7 +100,7 @@ public class UsuarioControlador {
             System.out.println("Acceso denegado. Usuario bloqueado");
         }else{
             try {
-                BufferedReader lector = new BufferedReader(new FileReader("D:\\usuarios.txt"));
+                BufferedReader lector = new BufferedReader(new FileReader("C:\\usuarios.txt"));
                 String linea = "";
                 do {
                     while((linea = lector.readLine())!=null){
